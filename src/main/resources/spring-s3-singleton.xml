@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--单例及时加载bean-->
+    <bean id="singletonObj" class="com.fy.s3.singleton.Obj"/>
+    <!--单例懒加载bean-->
+    <bean id="singletonIsLazyObj" class="com.fy.s3.singleton.Obj" lazy-init="true"/>
+    <!--多例bean，要用才创建，懒加载-->
+    <bean id="prototypeObj" class="com.fy.s3.singleton.Obj" scope="prototype"/>
+</beans>
