@@ -23,7 +23,7 @@ public class Msg implements InitializingBean {
 
     @PostConstruct
     public void beforeInit(){
-        System.out.println("初始化方法前");
+        System.out.println("初始化方法2");
     }
 
     @Override
